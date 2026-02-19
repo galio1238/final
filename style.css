@@ -67,8 +67,8 @@ header nav a:hover {
 
 /* Grid Container */
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin: 2rem 0;
 }
@@ -76,6 +76,7 @@ header nav a:hover {
 .grid-item {
   background: #fff;
   padding: 1.5rem;
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -174,7 +175,6 @@ header nav i {
   }
   
   .grid-container {
-    grid-template-columns: 1fr;
     gap: 1rem;
   }
   
