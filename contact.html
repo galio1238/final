@@ -1,23 +1,30 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | Ido Gal</title>
   <meta name="description" content="Contact Ido Gal — Software Engineer." />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
   <header>
-    <h1>Ido Gal</h1>
-    <p>Software Engineer</p>
+    <div class="header-name-row">
+      <h1>Ido Gal</h1>
+      <img src="images/IMG_6082.JPG" alt="Ido Gal" class="header-profile-image" />
+    </div>
+    <h2>Software Engineer</h2>
 
     <nav aria-label="Primary">
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="projects.html">Projects</a> |
-      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="projects.html"><i class="fas fa-folder"></i> Projects</a>
+      <a href="contact.html" aria-current="page"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
-    <hr />
   </header>
 
   <main>
@@ -28,24 +35,29 @@
         You can also find my work on GitHub and my profile on LinkedIn.
       </p>
 
-      <h3>Links</h3>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">Add your LinkedIn link</a></li>
-        <li><strong>GitHub:</strong> <a href="#" target="_blank" rel="noopener">Add your GitHub link</a></li>
-      </ul>
-
-      <h3>Resume</h3>
-      <p>
-        Add your resume PDF to this folder and link it:
-        <a href="resume.pdf">resume.pdf</a>
-      </p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h3>Links</h3>
+          <ul>
+            <li><a
+                href="mailto:gido71200@gmail.com"><i class="fas fa-envelope"></i> <strong>Email</strong> </a></li>
+            <li><a href="https://www.linkedin.com/in/ido-gal1/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> <strong>LinkedIn</strong> </a></li>
+            <li><a href="https://github.com/galio1238" target="_blank" rel="noopener"><i class="fab fa-github"></i> <strong>GitHub</strong> </a></li>
+          </ul>
+        </div>
+        <div class="grid-item">
+          <h3>Resume</h3>
+          <p>
+             <a href="resume.pdf"><i class="fas fa-file-pdf"></i><strong>Resume</strong></a>
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <hr />
     <p>© 2026 Ido Gal</p>
   </footer>
 </body>
+
 </html>

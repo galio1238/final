@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ido Gal | Software Engineer</title>
   <meta name="description" content="Ido Gal — Software Engineer portfolio and contact." />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
   <header>
-    <h1>Ido Gal</h1>
-    <p>Software Engineer</p>
+    <div class="header-name-row">
+      <h1>Ido Gal</h1>
+      <img src="images/IMG_6082.JPG" alt="Ido Gal" class="header-profile-image" />
+    </div>
+    <h2>Software Engineer</h2>
 
     <nav aria-label="Primary">
-      <a href="index.html" aria-current="page">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="projects.html">Projects</a> |
-      <a href="contact.html">Contact</a>
+      <a href="index.html" aria-current="page"><i class="fas fa-home"></i> Home</a> 
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="projects.html"><i class="fas fa-folder"></i> Projects</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
-    <hr />
   </header>
 
   <main>
@@ -29,42 +34,43 @@
       </p>
     </section>
 
-    <section>
-      <h2>Highlights</h2>
+    <!-- Grid Layout Section -->
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Highlights</h3>
       <ul>
         <li>Builds web applications and APIs</li>
         <li>Comfortable across frontend and backend</li>
         <li>Values testing, documentation, and clear communication</li>
       </ul>
-    </section>
+      </div>
 
-    <section>
-      <h2>What I’m Looking For</h2>
+      <div class="grid-item">
+        <h3>What I'm Looking For</h3>
       <ul>
         <li>Software Engineering roles</li>
         <li>Teams that value ownership and strong engineering practices</li>
         <li>Opportunities to ship impactful work and keep learning</li>
       </ul>
-      <p>
-        See <a href="projects.html">Projects</a> for examples of my work, or go to
-        <a href="contact.html">Contact</a> to reach me.
-      </p>
-    </section>
+      </div>
 
-    <hr />
+      <div class="grid-item">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="resume.pdf"><i class="fas fa-file-pdf"></i>Resume</a></li>
+          <li><a href="https://github.com/galio1238" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ido-gal1/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <section aria-label="Quick links">
-      <h2>Links</h2>
-      <ul>
-        <li>Resume: <a href="resume.pdf">my resume</a></li>
-        <li>GitHub: <a href="https://github.com/galio1238">galio1238</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/ido-gal1/">ido-gal</a></li>
-      </ul>
-    </section>
+    <p style="text-align: center; margin-top: 2rem;">
+      See <a href="projects.html">Projects</a> for examples of my work, or go to
+      <a href="contact.html">Contact</a> to reach me.
+    </p>
   </main>
 
   <footer>
-    <hr />
     <p>© 2026 Ido Gal</p>
   </footer>
 </body>

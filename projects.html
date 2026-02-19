@@ -1,23 +1,30 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Ido Gal</title>
   <meta name="description" content="Projects by Ido Gal — Software Engineer." />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
   <header>
-    <h1>Ido Gal</h1>
-    <p>Software Engineer</p>
+    <div class="header-name-row">
+      <h1>Ido Gal</h1>
+      <img src="images/IMG_6082.JPG" alt="Ido Gal" class="header-profile-image" />
+    </div>
+    <h2>Software Engineer</h2>
 
     <nav aria-label="Primary">
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="projects.html" aria-current="page">Projects</a> |
-      <a href="contact.html">Contact</a>
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="projects.html" aria-current="page"><i class="fas fa-folder"></i> Projects</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
-    <hr />
   </header>
 
   <main>
@@ -28,58 +35,46 @@
         and practical results. Replace placeholders with your real projects and links.
       </p>
     </section>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h3>Mentori</h3>
+        <p><strong>Summary:</strong> AI-powered full-stack tutoring platform serving 200+ active users in production.</p>
+        <p><strong>Tech:</strong> React, TypeScript, Node.js, MongoDB.</p>
+        <ul>
+          <li>Built and deployed an AI-powered full-stack tutoring platform serving 200+ active users in production.</li>
+          <li>Designed scalable REST APIs and MongoDB data models to support real-time interactions.</li>
+        </ul>
+        <p>
+          <a href="https://mentori.app/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+        </p>
+      </div>
 
-    <section>
-      <h3>Project 1 — Title</h3>
-      <p><strong>Summary:</strong> One sentence describing what it does and who it’s for.</p>
-      <p><strong>Tech:</strong> List technologies (e.g., Angular, Node.js, Firebase).</p>
-      <ul>
-        <li>What you built / owned</li>
-        <li>What problem it solved</li>
-        <li>Impact (performance, features shipped, users, reliability, etc.)</li>
-      </ul>
-      <p>
-        <a href="#" target="_blank" rel="noopener">GitHub</a> |
-        <a href="#" target="_blank" rel="noopener">Demo</a>
-      </p>
-      <hr />
-    </section>
+      <div class="grid-item">
+        <h3>Fake-Detector</h3>
+        <p><strong>Summary:</strong> Modular computer vision framework for fake image detection using U-Net (segmentation), ResNet (CNN classification), and Vision Transformers.</p>
+        <p><strong>Tech:</strong> U-Net, ResNet, Vision Transformer (ViT), Python.</p>
+        <ul>
+          <li>Implemented end-to-end training, validation, and evaluation pipelines with reusable dataset and preprocessing utilities.</li>
+          <li>Structured the repository using branch-isolated model pipelines to enable reproducible experiments and architecture benchmarking.</li>
+          <li>Conducted comparative analysis between CNN and transformer-based approaches.</li>
+        </ul>
+      </div>
 
-    <section>
-      <h3>Project 2 — Title</h3>
-      <p><strong>Summary:</strong> One sentence describing what it does and who it’s for.</p>
-      <p><strong>Tech:</strong> List technologies (e.g., Python, SQL, Docker).</p>
-      <ul>
-        <li>Key feature or design decision</li>
-        <li>Interesting challenge you solved</li>
-        <li>Result / measurable improvement</li>
-      </ul>
-      <p>
-        <a href="#" target="_blank" rel="noopener">GitHub</a> |
-        <a href="#" target="_blank" rel="noopener">Write-up</a>
-      </p>
-      <hr />
-    </section>
-
-    <section>
-      <h3>Project 3 — Title</h3>
-      <p><strong>Summary:</strong> One sentence describing what it does and who it’s for.</p>
-      <p><strong>Tech:</strong> List technologies.</p>
-      <ul>
-        <li>What you learned</li>
-        <li>How you tested/validated it</li>
-        <li>What you would improve next</li>
-      </ul>
-      <p>
-        <a href="#" target="_blank" rel="noopener">GitHub</a> |
-        <a href="#" target="_blank" rel="noopener">Demo</a>
-      </p>
-    </section>
+      <div class="grid-item">
+        <h3>Bank Infrastructure</h3>
+        <p><strong>Summary:</strong> C++ banking system built with OOP principles, core data structures, and file-based persistence.</p>
+        <p><strong>Tech:</strong> C++.</p>
+        <ul>
+          <li>Developed a C++ banking system using OOP principles, data structures, and file-based persistence.</li>
+          <li>Implemented transaction processing with validation, error handling, and modular system design.</li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <hr />
     <p>© 2026 Ido Gal</p>
   </footer>
 </body>
+
 </html>
