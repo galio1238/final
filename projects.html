@@ -20,10 +20,12 @@
     <h2>Software Engineer</h2>
 
     <nav aria-label="Primary">
-      <a href="index.html"><i class="fas fa-home"></i> Home</a>
-      <a href="about.html"><i class="fas fa-user"></i> About</a>
-      <a href="projects.html" aria-current="page"><i class="fas fa-folder"></i> Projects</a>
-      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      <ul class="nav-list">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="projects.html" aria-current="page"><i class="fas fa-folder"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -35,8 +37,8 @@
         and practical results.
       </p>
     </section>
-    <div class="grid-container">
-      <div class="grid-item">
+    <section class="grid-container" aria-label="Project list">
+      <article class="grid-item">
         <img src="images/mentori_homepage.jpg" alt="Screenshot of the Mentori tutoring platform homepage" class="project-image" />
         <h3>Mentori</h3>
         <p><strong>Summary:</strong> AI-powered full-stack tutoring platform serving 200+ active users in production.</p>
@@ -46,11 +48,11 @@
           <li>Designed scalable REST APIs and MongoDB data models to support real-time interactions.</li>
         </ul>
         <p>
-          <a href="https://mentori.app/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Website</a>
+          <a href="https://mentori.app/"><i class="fas fa-globe"></i> Website</a>
         </p>
-      </div>
+      </article>
 
-      <div class="grid-item">
+      <article class="grid-item">
         <h3>Fake-Detector</h3>
         <p><strong>Summary:</strong> Modular computer vision framework for fake image detection using U-Net (segmentation), ResNet (CNN classification), and Vision Transformers.</p>
         <p><strong>Tech:</strong> U-Net, ResNet, Vision Transformer (ViT), Python.</p>
@@ -59,9 +61,9 @@
           <li>Structured the repository using branch-isolated model pipelines to enable reproducible experiments and architecture benchmarking.</li>
           <li>Conducted comparative analysis between CNN and transformer-based approaches.</li>
         </ul>
-      </div>
+      </article>
 
-      <div class="grid-item">
+      <article class="grid-item">
         <h3>Bank Infrastructure</h3>
         <p><strong>Summary:</strong> C++ banking system built with OOP principles, core data structures, and file-based persistence.</p>
         <p><strong>Tech:</strong> C++.</p>
@@ -69,8 +71,8 @@
           <li>Developed a C++ banking system using OOP principles, data structures, and file-based persistence.</li>
           <li>Implemented transaction processing with validation, error handling, and modular system design.</li>
         </ul>
-      </div>
-    </div>
+      </article>
+    </section>
   </main>
 
   <footer>
